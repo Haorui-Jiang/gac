@@ -49,16 +49,16 @@
 
 ## 注意事项
 
-- 若用户电脑系统为较早版本的 Windows 系统，通过 `begin.exe` 进入 `index.htm` 将使用 IE浏览器打开该网页
+- 地图等图片的占用空间较大，网页端读取时会花费较长时间，建议将项目完整下载到本地进行浏览。
+- 若用户电脑系统为较早版本的 Windows 系统，通过 `begin.exe` 进入 `index.htm` 将使用 IE浏览器打开该网页。
 - 由于 IE 浏览器默认情况下会限制网页脚本的运行，导致图片切换等基于 JavaScript 脚本语言编写的部分功能在网页中无法实现。需要单击网页界面最下方的 “允许阻止的内容” 按键解除其限制。
 - 建议 `begin.exe` 仅用于浏览《图集》相关信息，网页在 Edge、Google 等浏览器中直接打开。因为这些浏览器一直在更新维护，可以直接正常运行 JavaScript 语言编写的代码，无需另行做解除限制等操作。
 
 ## 技术实现
-- **颜色方案**：渐变背景颜色通过 [ColorSpace](https://mycolor.space/) 参考《图集》原始网页图片生成
+- **颜色方案**：主页渐变背景颜色使用 [ColorSpace](https://mycolor.space/) 参考《图集》原始网页图片生成
 - **地图插图**：[ArcGIS Pro](https://www.esri.com/zh-cn/arcgis/products/arcgis-pro/overview) + [天地图](https://www.tianditu.gov.cn/) + [remove.bg](https://www.remove.bg/zh)
 - **交互功能**：[jQuery](https://jquery.com/) 实现图片切换交互效果及表格样式调整
 - **内容优化**：图片文本 OCR 识别转换
-- **图片存储**：《图集》中的地图等图片保存于 [语雀](https://www.yuque.com/about) 个人知识库
 
 ## 数据来源
 [《中国地质图集》电子版](https://mp.weixin.qq.com/s/wov_8wErWWn437mb_Twv8w)（公众号【地质掘墓人】推文）
