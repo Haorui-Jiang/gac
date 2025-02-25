@@ -60,5 +60,5 @@
 - **交互功能**：[jQuery](https://jquery.com/) 实现图片切换交互效果及表格样式调整
 - **内容优化**：图片文本 OCR 识别转换
 
-## 数据来源
-[《中国地质图集》电子版](https://mp.weixin.qq.com/s/wov_8wErWWn437mb_Twv8w)（公众号【地质掘墓人】推文）
+## 图文数据来源
+[《中国地质图集》电子版](https://mp.weixin.qq.com/s/wov_8wErWWn437mb_Twv8w)（公众号【地质掘墓人】共享资料）
