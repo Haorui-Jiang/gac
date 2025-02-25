@@ -1,0 +1,35 @@
+h1 {
+    font-size: 24px;
+    font-family: "SimHei", serif;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.text_border {
+    margin: 0 auto 0 auto;
+    width: 80%;
+}
+
+.text {
+    font-size: 18px;
+    font-family: "Times New Roman", "SimSun";
+    line-height: 30px;
+    text-indent: 2em;
+    text-align: justify;
+    margin: 0;
+}
+
+.signOff {
+    font-size: 18px;
+    font-family: "SimHei", serif;
+    line-height: 30px;
+    text-align: right;
+    margin: 0 50px 0 0;
+}
+
+sup, sub {
+    line-height: 0;
+}

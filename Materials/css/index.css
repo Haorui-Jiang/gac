@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:darkblue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header a {
+    color: #E9DE46;
+    font-size: 24px;
+    font-family: "Times New Roman", "Microsoft Yahei";
+    font-weight: bold;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.catalog {
+    color: #E9DE46;
+    font-size: 32px;
+    font-family: "Microsoft Yahei", serif;
+    font-weight: bold;
+    float: right;
+    margin: 0 30px 0 0;
+    text-shadow: 1px 0 0 white, 0 1px 0 white, -1px 0 0 white, 0 -1px 0 white;
+}
+
+.title{
+    color: white;
+    font-size: 20px;
+    font-family: "SimHei", serif;
+    line-height: 40px;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+div a {
+    color: white;
+    font-size: 16px;
+    font-family: "SimSun", serif;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.a_div {
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 30px;
+}
+
+footer {
+    font-size: 16px;
+    font-family: "Times New Roman", "SimSun";
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    font-size: 16px;
+    font-family: "SimSun", serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.p_footer {
+    margin: 5px 0 10px 0;
+}

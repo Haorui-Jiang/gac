@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>云南省地质图</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="../../index.htm">
+            <span>中 国 地 质 图 集</span>&emsp;&emsp;&emsp;
+            <span style="font-style: italic;">Geological Atlas of China</span>
+        </a>
+    </header>
+
+    <div class="container">
+        <ul>
+            <li class="cur"><img src="https://cdn.nlark.com/yuque/0/2025/jpeg/48572489/1740394758314-09642304-ef57-495f-a36e-cbc3ca287462.jpeg" alt=""></li>
+            <li><img src="https://cdn.nlark.com/yuque/0/2025/jpeg/48572489/1740394861742-4dc08dee-db96-458a-913d-8921d2231bb7.jpeg" alt=""></li>
+            <li><img src="https://cdn.nlark.com/yuque/0/2025/jpeg/48572489/1740394861254-3c5023cd-4f2e-47de-a1f7-671d8a5fc584.jpeg" alt=""></li>
+            <li><img src="https://cdn.nlark.com/yuque/0/2025/jpeg/48572489/1740394866526-2f355d3e-ae62-4b79-906e-8bbb3b4d7c78.jpeg" alt=""></li>
+        </ul>
+        <button class="lbtn">&lt;</button>
+        <button class="rbtn">&gt;</button>
+        <ol>
+            <li class="show">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ol>
+    </div>
+
+    <footer>
+        <hr>
+        <p class="p_footer">
+            网页制作：<a href="https://img.picui.cn/free/2025/02/23/67bb01437f5e8.jpg" target="_blank">琴书地理阁</a>
+            &emsp;&emsp;
+            页面参考及图文来源：<a href="https://mp.weixin.qq.com/s/wov_8wErWWn437mb_Twv8w" target="_blank">中国地质图集</a>
+        </p>
+    </footer>
+</body>
+</html>
+<script type="text/javascript">
+    var idx = 0;
+
+    $(".lbtn").click(function () {
+        $("ul li:eq(" + idx + ")").css({"left": 30}).stop(true).animate({"left": 930}, 900);
+        idx--;
+        idx = idx < 0 ? 3 : idx;
+        $("ul li:eq(" + idx + ")").css({"left": -870}).stop(true).animate({"left": 30}, 900);
+        // 小球类名切换
+        $("ol li:eq(" + idx + ")").addClass("show").siblings().removeClass("show");
+    });
+
+    $(".rbtn").click(function () {
+        $("ul li:eq(" + idx + ")").css({"left": 30}).stop(true).animate({"left": -870}, 900);
+        idx++;
+        idx = idx > 3 ? 0 : idx;
+        $("ul li:eq(" + idx + ")").css({"left": 930}).stop(true).animate({"left": 30}, 900);
+        $("ol li:eq(" + idx + ")").addClass("show").siblings().removeClass("show");
+    });
+</script>

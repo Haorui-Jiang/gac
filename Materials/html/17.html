@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>中国新构造图</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="../../index.htm">
+            <span>中 国 地 质 图 集</span>&emsp;&emsp;&emsp;
+            <span style="font-style: italic;">Geological Atlas of China</span>
+        </a>
+    </header>
+
+    <div class="container">
+        <ul>
+            <li class="cur"><img src="https://cdn.nlark.com/yuque/0/2025/jpeg/48572489/1740383071190-91898eba-785d-4f2d-a1e3-6ff0dd2c0e1e.jpeg" alt=""></li>
+            <li><img src="https://cdn.nlark.com/yuque/0/2025/jpeg/48572489/1740383081198-cf28f05b-46a8-4b7e-8582-683eab2fd867.jpeg" alt=""></li>
+        </ul>
+        <button class="lbtn">&lt;</button>
+        <button class="rbtn">&gt;</button>
+        <ol>
+            <li class="show">1</li>
+            <li>2</li>
+        </ol>
+    </div>
+
+    <footer>
+        <hr>
+        <p class="p_footer">
+            网页制作：<a href="https://img.picui.cn/free/2025/02/23/67bb01437f5e8.jpg" target="_blank">琴书地理阁</a>
+            &emsp;&emsp;
+            页面参考及图文来源：<a href="https://mp.weixin.qq.com/s/wov_8wErWWn437mb_Twv8w" target="_blank">中国地质图集</a>
+        </p>
+    </footer>
+</body>
+</html>
+<script type="text/javascript">
+    var idx = 0;
+
+    $(".lbtn").click(function () {
+        $("ul li:eq(" + idx + ")").css({"left": 30}).stop(true).animate({"left": 930}, 900);
+        idx--;
+        idx = idx < 0 ? 1 : idx;
+        $("ul li:eq(" + idx + ")").css({"left": -870}).stop(true).animate({"left": 30}, 900);
+        // 小球类名切换
+        $("ol li:eq(" + idx + ")").addClass("show").siblings().removeClass("show");
+    });
+
+    $(".rbtn").click(function () {
+        $("ul li:eq(" + idx + ")").css({"left": 30}).stop(true).animate({"left": -870}, 900);
+        idx++;
+        idx = idx > 1 ? 0 : idx;
+        $("ul li:eq(" + idx + ")").css({"left": 930}).stop(true).animate({"left": 30}, 900);
+        $("ol li:eq(" + idx + ")").addClass("show").siblings().removeClass("show");
+    });
+</script>

@@ -1,0 +1,39 @@
+table{
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gainsboro;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 99%;
+}
+
+caption{
+    text-align: center;
+    font-family: "SimSun", serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+th{
+    border-width: 1px;
+    border-style: solid;
+    border-color: gainsboro;
+    color: white;
+    background-color: #1F4E78;
+    font-family: "SimSun", serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+td{
+    border-width: 1px;
+    border-style: solid;
+    border-color: gainsboro;
+    font-size: 16px;
+    font-family: "Times New Roman", "SimSun";
+    padding: 10px;
+    text-align: center;
+}
